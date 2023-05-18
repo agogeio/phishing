@@ -1,0 +1,170 @@
+### Review the SPF and SKIM Data ###
+
+[
+    (
+    ###[0][0] first item in the string ###
+    b'2 (RFC822 {9522}', 
+
+    ###[0][1] after the comma ###
+    b'Received: from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+    \r\n by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+    \r\n 11:31:48 +0000
+    \r\n Received: from BN9PR03CA0127.namprd03.prod.outlook.com (2603:10b6:408:fe::12)
+    \r\n by PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11) with
+    \r\n Microsoft SMTP Server (version=TLS1_2,\r\n cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6387.30; Tue, 16 May
+    \r\n 2023 11:31:47 +0000\r\nReceived: from BN8NAM12FT012.eop-nam12.prod.protection.outlook.com
+    \r\n (2603:10b6:408:fe:cafe::e2) by BN9PR03CA0127.outlook.office365.com
+    \r\n (2603:10b6:408:fe::12) with Microsoft SMTP Server (version=TLS1_2,
+    \r\n cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.6387.30 via Frontend
+    \r\n Transport; Tue, 16 May 2023 11:31:47 +0000
+    \r\n Authentication-Results: spf=pass (sender IP is 209.85.219.43)
+    \r\n smtp.mailfrom=gmail.com; dkim=pass (signature was verified)
+    \r\n header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+    \r\n reason=100
+    \r\n Received-SPF: Pass (protection.outlook.com: domain of gmail.com designates
+    \r\n 209.85.219.43 as permitted sender) receiver=protection.outlook.com;
+    \r\n client-ip=209.85.219.43; helo=mail-qv1-f43.google.com; pr=C
+    \r\n Received: from mail-qv1-f43.google.com (209.85.219.43) by
+    \r\n BN8NAM12FT012.mail.protection.outlook.com (10.13.182.123) with Microsoft SMTP
+    \r\n Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+    \r\n 15.20.6433.4 via Frontend Transport; Tue, 16 May 2023 11:31:47 +0000
+    \r\n X-IncomingTopHeaderMarker:
+    \r\n OriginalChecksum:C06D12DFFAA1308013CB32BC97F33B7D611C1F2B834716753C089AAFC47139C0;UpperCasedChecksum:FEFAE18054E1F0A21B609A8E6C5663D659EF6D9A8E4D3BBCDDB1BDD7625FC6A1;SizeAsReceived:2316;Count:13
+    \r\n Received: by mail-qv1-f43.google.com with SMTP id 6a1803df08f44-6235aac00edso23026706d6.1
+    \r\n for <agoge.io@outlook.com>; Tue, 16 May 2023 04:31:47 -0700 (PDT)
+    \r\n DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+    \r\n d=gmail.com; s=20221208; t=1684236706; x=1686828706;
+    \r\n h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+    \r\n :date:message-id:reply-to;
+    \r\n bh=b1mdjVEbQnUMwlJSY1CNp7rihJ+UN5NddaI8axdMnsU=;
+    \r\n b=gSfAcOcrPocJ6qrXyr1ZkEdGtTXP+mye4IRuznp1Kq0DAlKTESg4SBslnceUkM/BXS
+    \r\n 6n3IZcWB4HsppHHakvLcGN+dQUEU5SuHfAAQKFLu1Z+CmhIR1vTk2U6iqqrw9jhYXI+c
+    \r\n xh6cmxGJJw67bZ09379/yoMebh3jwPVJNZZaJ84Vv6Hf7Mx+Nob+zggtUtbcC6QTryWs
+    \r\n +tAq/d3EUPCK2THGxuCqW+csNqEJjI4BP86JWs5ggylK6awUJEYQO4XfC3ObCyMIV5RN
+    \r\n bxUMlAh2YfHiFSIir2FMCjrIksr5wKjVR8DXR8J+ZGbBnPUPTH+O2DhlOTuR+aVpwfS8
+    \r\n A90g==
+    \r\n X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+    \r\n d=1e100.net; s=20221208; t=1684236706; x=1686828706;
+    \r\n h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+    \r\n :from:to:cc:subject:date:message-id:reply-to;
+    \r\n bh=b1mdjVEbQnUMwlJSY1CNp7rihJ+UN5NddaI8axdMnsU=;
+    \r\n b=a7jO+SRmFB89Wh26guygZlqTt+3+Ftb7DTri6hglrte3mdMH1KREnEVCXQ/5yQs/6w
+    \r\n bb2cy/4FU6CGKcLr+oKgxSsMwa5CjXSQ6y4Lv6pJRKBjmj2/eGcz/POQTxISBEvOOG7j
+    \r\n 1xG1bRiWeTqJK1Ri9TFWv5lud309Z6GI9a+mKIZ5yhsBYGESaiwIKIfioODc7KFKWRWo
+    \r\n ZFQElMyFVZDTwwj1uHjAj1miedcHlY2sDtmmqwSe0FEs6taYb9b9qggSYei1IWZJLCHQ
+    \r\n v3kevchCazSn6/sGyfSSBVL1Uziv129WfxZsPelcvEotkqvkM5rhluh92f3kRD9eX389
+    \r\n e3VQ==\r\nX-Gm-Message-State: AC+VfDx5c73uAxgHDXdDqpNilJzAymvI+HFhlLeEUcbX1IScpRY3+rQk
+    \r\n \tvQYohMx8WrayXMp28uBFH66dn85gPfftQ3xjCNEYQ5q2
+    \r\n X-Google-Smtp-Source: ACHHUZ6Y/wZobAntRbjyy+wnPVV7s8rV3yt3Lw5phCWz8AzWtXyyDDr62Hzh68lmaIu1qi2v34e4U/JGuz694LSpmyU=
+    \r\n X-Received: by 2002:a05:6214:1c49:b0:622:431e:c790 with SMTP id
+    \r\n if9-20020a0562141c4900b00622431ec790mr25436585qvb.33.1684236706645; Tue, 16
+    \r\n May 2023 04:31:46 -0700 (PDT)
+    \r\n From: Steve Aiello <xxxxxxx@gmail.com>
+    \r\n Date: Tue, 16 May 2023 07:31:35 -0400
+    \r\n Message-ID: <CA+Gfkp8gTREi1sJ4gjihPg1QJNhDHrRYkn3Hqms6B_1J66W9hA@mail.gmail.com>
+    \r\n Subject: Test email 2
+    \r\n To: agoge.io@outlook.com
+    \r\n Content-Type: multipart/alternative; boundary="0000000000009e0bbb05fbcdea3f"
+    \r\n X-IncomingHeaderCount: 13
+    \r\n Return-Path: xxxxxxx@gmail.com
+    \r\n X-MS-Exchange-Organization-ExpirationStartTime: 16 May 2023 11:31:47.2805
+    \r\n (UTC)
+    \r\n X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+    \r\n X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+    \r\n X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+    \r\n X-MS-Exchange-Organization-Network-Message-Id:
+    \r\n 31b2f6b8-c9cc-46da-a113-08db56012242
+    \r\n X-EOPAttributedMessage: 0
+    \r\n X-EOPTenantAttributedMessage: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+    \r\n X-MS-Exchange-Organization-MessageDirectionality: Incoming
+    \r\n X-MS-PublicTrafficType: Email
+    \r\n X-MS-TrafficTypeDiagnostic:
+    \r\n BN8NAM12FT012:EE_|PH8PR20MB5415:EE_|SA1PR20MB6173:EE_
+    \r\n X-MS-Exchange-Organization-AuthSource:
+    \r\n BN8NAM12FT012.eop-nam12.prod.protection.outlook.com
+    \r\n X-MS-Exchange-Organization-AuthAs: Anonymous
+    \r\n X-MS-UserLastLogonTime: 5/16/2023 11:30:40 AM
+    \r\n X-MS-Office365-Filtering-Correlation-Id: 31b2f6b8-c9cc-46da-a113-08db56012242
+    \r\n X-MS-Exchange-EOPDirect: true
+    \r\n X-Sender-IP: 209.85.219.43
+    \r\n X-SID-PRA: xxxxxxx@GMAIL.COM
+    \r\n X-SID-Result: PASS
+    \r\n X-MS-Exchange-Organization-PCL: 2
+    \r\n X-MS-Exchange-Organization-SCL: 1
+    \r\n X-Microsoft-Antispam: BCL:0;
+    \r\n X-MS-Exchange-CrossTenant-OriginalArrivalTime: 16 May 2023 11:31:47.2336
+    \r\n (UTC)
+    \r\n X-MS-Exchange-CrossTenant-Network-Message-Id: 31b2f6b8-c9cc-46da-a113-08db56012242
+    \r\n X-MS-Exchange-CrossTenant-Id: 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+    \r\n X-MS-Exchange-CrossTenant-AuthSource:
+    \r\n BN8NAM12FT012.eop-nam12.prod.protection.outlook.com
+    \r\n X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+    \r\n X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+    \r\n X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg:
+    \r\n 00000000-0000-0000-0000-000000000000
+    \r\n X-MS-Exchange-Transport-CrossTenantHeadersStamped: PH8PR20MB5415
+    \r\n X-MS-Exchange-Transport-EndToEndLatency: 00:00:01.3112739
+    \r\n X-MS-Exchange-Processed-By-BccFoldering: 15.20.6387.033
+    \r\n X-Microsoft-Antispam-Mailbox-Delivery:
+    \r\n \tabwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90010023)(91010020)(91040095)(9050020)(9100338)(4810010)(4910033)(8820095)(9575002)(10195002)(9320005);
+    \r\n X-Message-Info:
+    \r\n \tqZelhIiYnPmqccS5kSBLh4x+cR7AMMF/mxTIcFHg4nWV/M1KPdZyVR65ofMTIgjaRt6l3xX6Xas8dIAp8CB/fPa4imgKk2Mf51+OJK2WJ95aGZ3odz5gzNmxfcYShtclxlJOpCueX/gS5neXTdEG+lfTpkaE6fIJg4dk9TQo0EEsVEsg8za1/uc0Ev6gyhEH4mWYgMOkFM7LsucnDwr0Wg==
+    \r\n X-Message-Delivery: Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0z
+    \r\n X-Microsoft-Antispam-Message-Info:
+    \r\n \t=?utf-8?B?cGw0c2F1UU9sTDVpMVJwbU1jUlRiVTZSU011eG4rRjNjYVZVaTBnNmtIMzVj?=
+    \r\n =?utf-8?B?TmJ0alNYOE96YVBZbUZheWxTK1d1TFNvY1dTTFQ0ZUEyZUMrS2FuOWg2UTBh?=
+    \r\n =?utf-8?B?TFFwQjV1UXhhL2RGMmE2Vk1wZUVzVktDL0xnSGprYWg3K2I1UjNVOGNvbkxZ?=
+    \r\n =?utf-8?B?SUZYZXp6WlE3VXZ0QTFyaXAvVHorZkxBK2ljNkJiQU5IdkpHYnowZFFraXpE?=
+    \r\n =?utf-8?B?ekFqdzF3SFVTQTdjZ1N3NVJQK1FJSnplQ2lnRmJXakpEL1pqTlJTUVAzQzlI?=
+    \r\n =?utf-8?B?dVVwakpFblFjbWpIM3VaWEJFb3lReXdHS3hoeDNDSXBoT25OMEJMUEl6SWJs?=
+    \r\n =?utf-8?B?dk1DaU5tWlJTeFBaVFBYbmNzZmliMXk1dzJGK3RTc2hhblJ3WjFmUWNmblBL?=
+    \r\n =?utf-8?B?ejBoYkNocUJ6c2xRVXFLN3hYaUNGczNnckY1WWVHS0ZpZTJvNGZaUEs2dlFL?=
+    \r\n =?utf-8?B?MGVHRE5nOTJGK2tXMHl6Q2I1TVVTMS9sM01vSnRORTNKVWhQeDRxbjdmRXQy?=
+    \r\n =?utf-8?B?M2hMV085SkxNR0lDKzQwZGY3MzQrVGZxSGpPcVRkbnZ2RWlzaTV6dEh3L3dC?=
+    \r\n =?utf-8?B?VTNiZXppRWlWSkpFTG9SeVB6WnN1djczRjhtN3BhVnVmWGsxVmxad3Nub3dn?=
+    \r\n =?utf-8?B?OFRPYjZ4SGxUZG1uSFZSekdzWmVpOFhpdisvVjNyUDRlOVludGdWUjVUUFNk?=
+    \r\n =?utf-8?B?cS9WOG10cE85Z1pwanJENWF6NUJrSzlKVzhHQlByV1F0ZlRXNnoxdmpvU3Rv?=
+    \r\n =?utf-8?B?UjJ4MGFzcklWVHNvOFFGWDJ6RDl6eGZ4U0Fqc2RlUHdOZnFyRm1GdTAwaGRv?=
+    \r\n =?utf-8?B?ZUhGT0tHSDc3YVZpd09EVXJDTVVWTlhHTkRJRTVhT1V0a3poRzg3cjB5YkdM?=
+    \r\n =?utf-8?B?dUxsVDR1RHJqUVIzT0JhVm52UlB6bmZYYzdERFl5T3pnVGFnU3hMT0JGT1N6?=
+    \r\n =?utf-8?B?U2ZlRjVBd3VlbU16a0l0aDY5UzBJZGdHNjVBNXZJRCs4R1NWUm9NZ2xlVENr?=
+    \r\n =?utf-8?B?NEh1UDNOaGdqQmVpMzB4Y3NHeDdPOEdnV0oxc0FXaGgzaDhKaXdvQ2NOSk1i?=
+    \r\n =?utf-8?B?bEtCajViUDQveldYcXVUL0xabFNYUHFuYkorb3BKYzhTZHptQ3YvZFNqNDdR?=
+    \r\n =?utf-8?B?T0RsVitrOUswcEY5clNrcy9xVUhEU2xIczVyUERMam5jeUdBbWRvSnprYk54?=
+    \r\n =?utf-8?B?SHF0RjZQb1lXdWpRd0VoSmljL1VzdENuSXBzVWZ0Q0JobU8wSEFTbFllQ1VC?=
+    \r\n =?utf-8?B?UnVvaURLOG0vanN3OXNpUVhPZUpTWERQYWFkK0M4YStObGZlQThwdmdrdU5I?=
+    \r\n =?utf-8?B?Zzd5dEYzUUt2Uk1CeUFBRUttZWlMREJOaDBDM0F4bXNYTmZYNTNGeSs5Q3k4?=
+    \r\n =?utf-8?B?ZDQ5eUNsMXhER3lRRUM5VnJQb1l6LytwTk5taWRBWVRZVWIyZ2piL0JlaVo1?=
+    \r\n =?utf-8?B?dmFnVXB0K1Brd0tEWWNuaWp2OGdaVElGWE9rbDdNdlA0REttbHJhOUwwU1BO?=
+    \r\n =?utf-8?B?YkJ1b3JjNk91cDRGSXNvdTFTNFZWRVZDQm5VMTVKZmlHdE55WW5JZzZhWTd4?=
+    \r\n =?utf-8?B?K1JLTWhZUDVXaGFZSVJKQkordDhhREVMYXFZSkRQREJFTjYvbUZoMlpnbnpr?=
+    \r\n =?utf-8?B?Sk51K0FVODl2UVJld2RURE9NcHFjQzEyUG4xVkFEWllSVVpQVGt3WWovRkM4?=
+    \r\n =?utf-8?B?elQ3bVhTdHBlbXdpbE9CZnJNUGJLajlGQmVnbkhoK0tUcFVpeGVWanZBPT0=?=
+    \r\n MIME-Version: 1.0
+    \r\n
+    \r\n --0000000000009e0bbb05fbcdea3f
+    \r\n Content-Type: text/plain; charset="UTF-8
+    \r\n
+    \r\n Test email 2
+    \r\n
+    \r\n-- 
+    \r\n Thomas Jefferson - If a nation expects to be ignorant and free in a state
+    \r\n of civilization, it expects what never was and never will be.
+    \r\n
+    \r\n --0000000000009e0bbb05fbcdea3f
+    \r\n Content-Type: text/html; charset="UTF-8"
+    \r\n Content-Transfer-Encoding: quoted-printable
+    \r\n
+    \r\n <meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><d=
+    \r\n    iv dir=3D"ltr">Test email 2<br clear=3D"all"><div><br></div><span class=3D"=
+    \r\n gmail_signature_prefix">-- </span><br><div dir=3D"ltr" class=3D"gmail_signa=
+    \r\n ture" data-smartmail=3D"gmail_signature">Thomas Jefferson - If a nation exp=
+    \r\n ects to be ignorant and free in a state of civilization, it expects what ne=
+    \r\n ver was and never will be.&nbsp; </div></div>
+    \r\n
+    \r\n--0000000000009e0bbb05fbcdea3f--
+    \r\n'), 
+    
+    ###[1] after the comma ###
+    b' FLAGS (\\Seen))'
+]

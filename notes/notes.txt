@@ -1,0 +1,22 @@
+Sender Policy Framework: https://www.cloudflare.com/learning/dns/dns-records/dns-spf-record/
+SPF records are a type of DNS TXT record commonly used for email authentication. SPF records include a list of IP addresses and domains authorized to send emails from that domain.
+
+DKIM: https://www.cloudflare.com/learning/dns/dns-records/dns-dmarc-record/
+A DKIM record is a specialized DNS TXT record that stores the public key used to verify an email's authenticity.
+
+DMARC: https://www.cloudflare.com/learning/dns/dns-records/dns-dmarc-record/
+DMARC is an important part of email security. DMARC policies are stored within DNS TXT records. Domain-based Message Authentication Reporting and Conformance (DMARC) is a method of authenticating email messages. A DMARC policy tells a receiving email server what to do after checking a domain's Sender Policy Framework (SPF) and DomainKeys Identified Mail (DKIM) records, which are additional email authentication methods.
+
+Overview:
+Email DNS Master Course | SPF + DKIM + DMARC Explained
+https://www.youtube.com/watch?v=S6id_BPFHcY
+
+
+Install pyspf and py3dns.
+Run python -m spf <domain.com> and record the output. Alternatively you can use nslookup -q=TXT <domain> and look for one that starts with v=spf1.
+Next validate the senders ip by running python -m spf "<spf output>" <the.ipv4.addr.val> <domain.com> a.
+You should see result: ('pass', 250, 'sender SPF authorized') mx!
+If the ip is wrong or SPF is not configured correctly, you'll see something like result: ('fail', 550, 'SPF fail - not authorized') -all.
+
+
+https://pypi.org/project/pyspf/
