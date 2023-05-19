@@ -20,3 +20,8 @@ If the ip is wrong or SPF is not configured correctly, you'll see something like
 
 
 https://pypi.org/project/pyspf/
+
+
+Geolocation API:
+https://ipgeolocation.io/
+

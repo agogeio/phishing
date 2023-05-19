@@ -1,0 +1,487 @@
+*********************************************
+
+Sender IP Address: 209.85.219.46
+Sender SID-PRA: SMA92878@GMAIL.COM
+Sender Authentication-Results: None
+Email Header: Received | from MW3PR20MB3403.namprd20.prod.outlook.com (2603:10b6:303:2e::18)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:06:37 +0000
+Email Header: Received | from MW3PR20MB3403.namprd20.prod.outlook.com (2603:10b6:303:2e::18)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:06:37 +0000
+Email Header: Received | from MW3PR20MB3403.namprd20.prod.outlook.com (2603:10b6:303:2e::18)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:06:37 +0000
+Email Header: Authentication-Results | spf=pass (sender IP is 209.85.219.46)
+ smtp.mailfrom=gmail.com; dkim=pass (signature was verified)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Email Header: Received-SPF | Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.219.46 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.219.46; helo=mail-qv1-f46.google.com; pr=C
+Email Header: Received | from MW3PR20MB3403.namprd20.prod.outlook.com (2603:10b6:303:2e::18)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:06:37 +0000
+Email Header: X-IncomingTopHeaderMarker |
+ OriginalChecksum:B27BCEE0B5F153C2DF5EE96173E7C1419EA88FE6A51F8ABD4534159E59977387;UpperCasedChecksum:D8358A6E999E69569791527B145312B254FD29BBE3EE4DAB8F4BFF4615899A1E;SizeAsReceived:2314;Count:13
+Email Header: Received | from MW3PR20MB3403.namprd20.prod.outlook.com (2603:10b6:303:2e::18)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:06:37 +0000
+Email Header: DKIM-Signature | v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1684235196; x=1686827196;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=iW7bKUIsk4Xx7MsbjxMjaht/baa0dH7rz74a0hUuMsg=;
+        b=N4yGxZcRTfzpYvN0uQ3NYKQFMKUhXL7GcOj/1eMO7hIo5sq4BPz/Z1VZrlXus2n9zJ
+         H3CsAYA1ecEYqmT+DzObUIrMRXEc2x37Dwem3pVR1r6B+tjst9KagCnGE77LHk/8Pgd4
+         tAlEVjIotZOgU4DnttrYTOpptH7ffjgK7sHHWpiivelXQwIm3lQjk0rjAWJ98UCziCQk
+         TCAvZVVFKi5AjbnE4L7GGmDyesWuDolokhpQuRvB1F/ivcrGw3I6x+QcWSVjIq5jpoSD
+         o3Hb0/8DzMaPi0yaV4f4KCnPR6GVVcWJA7YUWJa0M/jUp44uBZWQ/Hg89adveHgak8r6
+         8HXQ==
+Email Header: X-Google-DKIM-Signature | v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684235196; x=1686827196;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=iW7bKUIsk4Xx7MsbjxMjaht/baa0dH7rz74a0hUuMsg=;
+        b=KQcGOz/h7zPq97GoA0443y6IJXSbBt9EwtyDMhqW9yd9pn6Gm2YarOc6Oy0f1eIV43
+         RLhkv9qUFc53Lp1h8luLYPh4Lee0Xx2jmhW9SZd25qMIl7juHrftrxXsj+NMzawLgE3C
+         vctp/McSW6yxxknr95RVyAsg6uChv2JtIsCo/8b2XMT+gOG42s0yVTuMVSHIkArALiKN
+         BJ2C+bwojH1nxeN8FfdzXuGVPSCd0Fhl6pGdUpKcUZxSXF1dh29xR1TN5UGOGI8lp0gE
+         zj2FG7lhSDWpJ17Z4uVWGVTiLje5caP7w90EDxQvgsDmaBQOO7tTIs0mvEmTFPYua3a1
+         /EvA==
+Email Header: X-Gm-Message-State | AC+VfDwK8s+Vf6f5vUjp2mFLtSwHlVvHEjsFt6XpAic1MFHM49FjveNC
+        IzIrUuX5O2demaXfuCN6gmmDZn/Nami3s648yk/VlSDt
+Email Header: X-Google-Smtp-Source | ACHHUZ5LRu3Bo4vn12BQGPBBcM6XteUXnBom9d8RG3yiEfoFmuQ1RNIkJw8VO4xawWPG3D3GetnaxOWrIpzL1HflgD8=
+Email Header: X-Received | by 2002:a05:6214:f06:b0:5ef:d5b0:c327 with SMTP id
+ gw6-20020a0562140f0600b005efd5b0c327mr62763990qvb.11.1684235195787; Tue, 16
+ May 2023 04:06:35 -0700 (PDT)
+Email Header: From | Steve Aiello <sma92878@gmail.com>
+Email Header: Date | Tue, 16 May 2023 07:06:24 -0400
+Email Header: Message-ID | <CA+Gfkp8jUCPtxMFLdVoGCtnsOgZiwrNAymP1h3HVHtOyqhXFVg@mail.gmail.com>
+Email Header: Subject | Test email
+Email Header: To | agoge.io@outlook.com
+Email Header: Content-Type | multipart/alternative; boundary="000000000000902dae05fbcd902d"
+Email Header: X-IncomingHeaderCount | 13
+Email Header: Return-Path | sma92878@gmail.com
+Email Header: X-MS-Exchange-Organization-ExpirationStartTime | 16 May 2023 11:06:36.2841
+ (UTC)
+Email Header: X-MS-Exchange-Organization-ExpirationStartTimeReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-ExpirationInterval | 1:00:00:00.0000000
+Email Header: X-MS-Exchange-Organization-ExpirationIntervalReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-Network-Message-Id |
+ 5d592aed-b114-4242-e117-08db55fd9da2
+Email Header: X-EOPAttributedMessage | 0
+Email Header: X-EOPTenantAttributedMessage | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+Email Header: X-MS-Exchange-Organization-MessageDirectionality | Incoming
+Email Header: X-MS-PublicTrafficType | Email
+Email Header: X-MS-TrafficTypeDiagnostic |
+ BN8NAM04FT037:EE_|MW3PR20MB3403:EE_|SA1PR20MB6173:EE_
+Email Header: X-MS-Exchange-Organization-AuthSource |
+ BN8NAM04FT037.eop-NAM04.prod.protection.outlook.com
+Email Header: X-MS-Exchange-Organization-AuthAs | Anonymous
+Email Header: X-MS-Office365-Filtering-Correlation-Id | 5d592aed-b114-4242-e117-08db55fd9da2
+Email Header: X-MS-Exchange-EOPDirect | true
+Email Header: X-Sender-IP | 209.85.219.46
+Email Header: X-SID-PRA | SMA92878@GMAIL.COM
+Email Header: X-SID-Result | PASS
+Email Header: X-MS-Exchange-Organization-PCL | 2
+Email Header: X-MS-Exchange-Organization-SCL | 1
+Email Header: X-Microsoft-Antispam | BCL:0;
+Email Header: X-MS-Exchange-CrossTenant-OriginalArrivalTime | 16 May 2023 11:06:36.2528
+ (UTC)
+Email Header: X-MS-Exchange-CrossTenant-Network-Message-Id | 5d592aed-b114-4242-e117-08db55fd9da2
+Email Header: X-MS-Exchange-CrossTenant-Id | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+Email Header: X-MS-Exchange-CrossTenant-AuthSource |
+ BN8NAM04FT037.eop-NAM04.prod.protection.outlook.com
+Email Header: X-MS-Exchange-CrossTenant-AuthAs | Anonymous
+Email Header: X-MS-Exchange-CrossTenant-FromEntityHeader | Internet
+Email Header: X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg |
+ 00000000-0000-0000-0000-000000000000
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersStamped | MW3PR20MB3403
+Email Header: X-MS-Exchange-Transport-EndToEndLatency | 00:00:01.6242448
+Email Header: X-MS-Exchange-Processed-By-BccFoldering | 15.20.6387.033
+Email Header: X-Microsoft-Antispam-Mailbox-Delivery |
+        abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90005022)(91005020)(90014020)(91030020)(91040095)(9050020)(9100338)(4810010)(4910033)(8820095)(9575002)(10195002)(9320005);
+Email Header: X-Message-Info |
+        qZelhIiYnPk+DpdFoaiOnYikS2yQK6s3PcLi5HA3QqYi/bRShnUQ5RlXRaMblVHlmz78EmWV+DgFNOsbQlcIlcrafr+ExOtNndVcHDTg6t//7Xqm3xkSxphmwEasAn/QzFC1E8wVGTyPdUkvaqkThJqmiN3CwK247yYpq37RTyIQCwHacWUTWDZDJIVdD13Zkc4MPrkbhHz8WWVbfNPzeQ==
+Email Header: X-Message-Delivery | Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0z
+Email Header: X-Microsoft-Antispam-Message-Info |
+        =?utf-8?B?Q2pFQyt5NVJodFR0R3RiSnFReDIvaEVGMlh3L2xkYmtTa21jQVBaVzJvblpq?=
+ =?utf-8?B?ekExNlhEOG4rOU95eGp4TDI4V1M1Y2VpM0VkbWJ4ZmVER1NXcVZOUzRTc1do?=
+ =?utf-8?B?WHpHVXNOK2ZzNHdzU2orZ1grQWphbHFmN0xIbE9KdGpPemEwc201L1dadEdE?=
+ =?utf-8?B?OVBYOGJiWE1wRElVTWp0UTFCY21zSUhIQklRbG82MEJZZ0laTTlRQ1UxMG1T?=
+ =?utf-8?B?RDc4dXhQeHlXNUI5VXZ4OVNuUGhGQ2RVVTNzQklPZ2pndUhTaGg2eXNCQkdO?=
+ =?utf-8?B?Znl5TmZkaEE5aEtzQTd0MElsdmkxcENoVmVpTDhaKzdWL0l5am43dCtQbk5x?=
+ =?utf-8?B?cGpwV25jMWY4V3lja2psRXNYSXFYdTVQWVJQM3hJakR4a0xQa0daMWJQY3Fq?=
+ =?utf-8?B?aE8vT3ZmWkV4RjJnV1Zic1greENjamxhY0ZUWGk0Zlg5VG1XQ1owbnRJUmJ1?=
+ =?utf-8?B?MEZCN3MzdXUzWlVINGZtK21tTkZTRUVBcGtlc2xqSEsyNFJyUzJVeXBWdnZ6?=
+ =?utf-8?B?UFVtUFlmSkN1V1VpUnpvSzVVUlRtNktvL3VBM2hDdllJd3llZWFQQ1Nzckkx?=
+ =?utf-8?B?QXh2S3hBV1NudllWNCtGbndNNndxamlrTzFleHNrSFNBQm0yeVhPOHFtSTQv?=
+ =?utf-8?B?SGV2VTUyTWZMQURsREEwWVUrN0IxUTcybWhkV3ZOcEtDaW5lZWlnU3lUa3Rl?=
+ =?utf-8?B?OTNkQ2JBK2VkVlVCSVFMZ2hZUXZ0Y3p5bUtjUGk1Nk9uUUdoMDZaaUh5OFFJ?=
+ =?utf-8?B?b3F1QlR5NzE3WmZkbzh0STRvc0toY3ZzWGI5S0tUbHJTbzdsamNTK3cvSHlq?=
+ =?utf-8?B?cTEyaFp1MXRINm01aXF2YWlHQnFuZVpVaE85S0gvQ2ltcnJQZzZFMm9reXJ2?=
+ =?utf-8?B?RDdHOTBOMUhGUlM5Qnkyc3J4YWV2OFFCZnU4TnM5RnBYM01idGxJS0RnYmt6?=
+ =?utf-8?B?K2liYmlVb1BNSmVtNFhYbmM4YnJEMzJFbGI5Zkg1ZjVUSHlreXNQbjc0Q0ZB?=
+ =?utf-8?B?dnNvZnU1T0l2Rm1WZ2lkZzVBME12OHJ5NXdMNEdFMXZiNk5ubXpuY1dJY0hX?=
+ =?utf-8?B?dnlIVXZvZ2dhY3EyQitTSVcyWVJmTUY3RnBnVFpqcGkzcGNTVVJIaXRwSnlh?=
+ =?utf-8?B?NzdWbDluQUk1ZjgrR1dIZ3Q5N1REWW5TT2pGaGNKZE82YUwvS2tLSlBPbmgv?=
+ =?utf-8?B?VTNpS0hlU0pBaTRKeEFOdkxuWVlJYitQWXU4WjZFVnVoeTlMb0RLWG1kMW5E?=
+ =?utf-8?B?a2k5ZFlpRDdqSmpJYnFLb3llZ0pyKyt5R1Jka3ZtcUtDUGZDd2cwb3l6aHJC?=
+ =?utf-8?B?cHNpWFJ6TjUvSllnUTlvZGJmNjJwamx3eG52NE9iOXV4QUV4UDEzbE41NnUz?=
+ =?utf-8?B?bHI2bjlIRDBsU2ptYWVkemloNlRQbzhyZW50ZUxJMzQraDJqaTJPdUR4N09O?=
+ =?utf-8?B?TWRDZk5kbDJmb3pBSy84dTdtTDQ2RE1weVhWZitaTE5PMTZvbzluT0JLSlVw?=
+ =?utf-8?B?S1YwZEpPQjE5MHkrN2ZPczlSY21lWHJ1ZFNkNGRXNzN1MkpZQXFkb1IyOWZO?=
+ =?utf-8?B?T0E0VWFncC9TZERIY2ppVTZmcEJmQzdkZjVXWHQ2bTdNa3hwcjZJdzJoa3BP?=
+ =?utf-8?B?WmlFd1krMWxXbnk5QmxHYzVIdExLWFpnZm1uWktPeVpyYlVPN2ZBRzE4bUxz?=
+ =?utf-8?B?SFJkODdCa0Y0d3h1a0ZqTlZnT01oNlN2UkpaaEdjTjkrNVlWN2JDSzVOR2tF?=
+ =?utf-8?Q?cU8YoK0U1Rg3jkT3Ys=3D?=
+Email Header: MIME-Version | 1.0
+
+
+
+
+
+*********************************************
+
+Sender IP Address: 209.85.219.43
+Sender SID-PRA: SMA92878@GMAIL.COM
+Sender Authentication-Results: None
+Email Header: Received | from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:31:48 +0000
+Email Header: Received | from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:31:48 +0000
+Email Header: Received | from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:31:48 +0000
+Email Header: Authentication-Results | spf=pass (sender IP is 209.85.219.43)
+ smtp.mailfrom=gmail.com; dkim=pass (signature was verified)
+ header.d=gmail.com;dmarc=pass action=none header.from=gmail.com;compauth=pass
+ reason=100
+Email Header: Received-SPF | Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.219.43 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.219.43; helo=mail-qv1-f43.google.com; pr=C
+Email Header: Received | from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:31:48 +0000
+Email Header: X-IncomingTopHeaderMarker |
+ OriginalChecksum:C06D12DFFAA1308013CB32BC97F33B7D611C1F2B834716753C089AAFC47139C0;UpperCasedChecksum:FEFAE18054E1F0A21B609A8E6C5663D659EF6D9A8E4D3BBCDDB1BDD7625FC6A1;SizeAsReceived:2316;Count:13
+Email Header: Received | from PH8PR20MB5415.namprd20.prod.outlook.com (2603:10b6:510:229::11)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Tue, 16 May 2023
+ 11:31:48 +0000
+Email Header: DKIM-Signature | v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20221208; t=1684236706; x=1686828706;
+        h=to:subject:message-id:date:from:mime-version:from:to:cc:subject
+         :date:message-id:reply-to;
+        bh=b1mdjVEbQnUMwlJSY1CNp7rihJ+UN5NddaI8axdMnsU=;
+        b=gSfAcOcrPocJ6qrXyr1ZkEdGtTXP+mye4IRuznp1Kq0DAlKTESg4SBslnceUkM/BXS
+         6n3IZcWB4HsppHHakvLcGN+dQUEU5SuHfAAQKFLu1Z+CmhIR1vTk2U6iqqrw9jhYXI+c
+         xh6cmxGJJw67bZ09379/yoMebh3jwPVJNZZaJ84Vv6Hf7Mx+Nob+zggtUtbcC6QTryWs
+         +tAq/d3EUPCK2THGxuCqW+csNqEJjI4BP86JWs5ggylK6awUJEYQO4XfC3ObCyMIV5RN
+         bxUMlAh2YfHiFSIir2FMCjrIksr5wKjVR8DXR8J+ZGbBnPUPTH+O2DhlOTuR+aVpwfS8
+         A90g==
+Email Header: X-Google-DKIM-Signature | v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20221208; t=1684236706; x=1686828706;
+        h=to:subject:message-id:date:from:mime-version:x-gm-message-state
+         :from:to:cc:subject:date:message-id:reply-to;
+        bh=b1mdjVEbQnUMwlJSY1CNp7rihJ+UN5NddaI8axdMnsU=;
+        b=a7jO+SRmFB89Wh26guygZlqTt+3+Ftb7DTri6hglrte3mdMH1KREnEVCXQ/5yQs/6w
+         bb2cy/4FU6CGKcLr+oKgxSsMwa5CjXSQ6y4Lv6pJRKBjmj2/eGcz/POQTxISBEvOOG7j
+         1xG1bRiWeTqJK1Ri9TFWv5lud309Z6GI9a+mKIZ5yhsBYGESaiwIKIfioODc7KFKWRWo
+         ZFQElMyFVZDTwwj1uHjAj1miedcHlY2sDtmmqwSe0FEs6taYb9b9qggSYei1IWZJLCHQ
+         v3kevchCazSn6/sGyfSSBVL1Uziv129WfxZsPelcvEotkqvkM5rhluh92f3kRD9eX389
+         e3VQ==
+Email Header: X-Gm-Message-State | AC+VfDx5c73uAxgHDXdDqpNilJzAymvI+HFhlLeEUcbX1IScpRY3+rQk
+        vQYohMx8WrayXMp28uBFH66dn85gPfftQ3xjCNEYQ5q2
+Email Header: X-Google-Smtp-Source | ACHHUZ6Y/wZobAntRbjyy+wnPVV7s8rV3yt3Lw5phCWz8AzWtXyyDDr62Hzh68lmaIu1qi2v34e4U/JGuz694LSpmyU=
+Email Header: X-Received | by 2002:a05:6214:1c49:b0:622:431e:c790 with SMTP id
+ if9-20020a0562141c4900b00622431ec790mr25436585qvb.33.1684236706645; Tue, 16
+ May 2023 04:31:46 -0700 (PDT)
+Email Header: From | Steve Aiello <sma92878@gmail.com>
+Email Header: Date | Tue, 16 May 2023 07:31:35 -0400
+Email Header: Message-ID | <CA+Gfkp8gTREi1sJ4gjihPg1QJNhDHrRYkn3Hqms6B_1J66W9hA@mail.gmail.com>
+Email Header: Subject | Test email 2
+Email Header: To | agoge.io@outlook.com
+Email Header: Content-Type | multipart/alternative; boundary="0000000000009e0bbb05fbcdea3f"
+Email Header: X-IncomingHeaderCount | 13
+Email Header: Return-Path | sma92878@gmail.com
+Email Header: X-MS-Exchange-Organization-ExpirationStartTime | 16 May 2023 11:31:47.2805
+ (UTC)
+Email Header: X-MS-Exchange-Organization-ExpirationStartTimeReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-ExpirationInterval | 1:00:00:00.0000000
+Email Header: X-MS-Exchange-Organization-ExpirationIntervalReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-Network-Message-Id |
+ 31b2f6b8-c9cc-46da-a113-08db56012242
+Email Header: X-EOPAttributedMessage | 0
+Email Header: X-EOPTenantAttributedMessage | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+Email Header: X-MS-Exchange-Organization-MessageDirectionality | Incoming
+Email Header: X-MS-PublicTrafficType | Email
+Email Header: X-MS-TrafficTypeDiagnostic |
+ BN8NAM12FT012:EE_|PH8PR20MB5415:EE_|SA1PR20MB6173:EE_
+Email Header: X-MS-Exchange-Organization-AuthSource |
+ BN8NAM12FT012.eop-nam12.prod.protection.outlook.com
+Email Header: X-MS-Exchange-Organization-AuthAs | Anonymous
+Email Header: X-MS-UserLastLogonTime | 5/16/2023 11:30:40 AM
+Email Header: X-MS-Office365-Filtering-Correlation-Id | 31b2f6b8-c9cc-46da-a113-08db56012242
+Email Header: X-MS-Exchange-EOPDirect | true
+Email Header: X-Sender-IP | 209.85.219.43
+Email Header: X-SID-PRA | SMA92878@GMAIL.COM
+Email Header: X-SID-Result | PASS
+Email Header: X-MS-Exchange-Organization-PCL | 2
+Email Header: X-MS-Exchange-Organization-SCL | 1
+Email Header: X-Microsoft-Antispam | BCL:0;
+Email Header: X-MS-Exchange-CrossTenant-OriginalArrivalTime | 16 May 2023 11:31:47.2336
+ (UTC)
+Email Header: X-MS-Exchange-CrossTenant-Network-Message-Id | 31b2f6b8-c9cc-46da-a113-08db56012242
+Email Header: X-MS-Exchange-CrossTenant-Id | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+Email Header: X-MS-Exchange-CrossTenant-AuthSource |
+ BN8NAM12FT012.eop-nam12.prod.protection.outlook.com
+Email Header: X-MS-Exchange-CrossTenant-AuthAs | Anonymous
+Email Header: X-MS-Exchange-CrossTenant-FromEntityHeader | Internet
+Email Header: X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg |
+ 00000000-0000-0000-0000-000000000000
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersStamped | PH8PR20MB5415
+Email Header: X-MS-Exchange-Transport-EndToEndLatency | 00:00:01.3112739
+Email Header: X-MS-Exchange-Processed-By-BccFoldering | 15.20.6387.033
+Email Header: X-Microsoft-Antispam-Mailbox-Delivery |
+        abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90010023)(91010020)(91040095)(9050020)(9100338)(4810010)(4910033)(8820095)(9575002)(10195002)(9320005);
+Email Header: X-Message-Info |
+        qZelhIiYnPmqccS5kSBLh4x+cR7AMMF/mxTIcFHg4nWV/M1KPdZyVR65ofMTIgjaRt6l3xX6Xas8dIAp8CB/fPa4imgKk2Mf51+OJK2WJ95aGZ3odz5gzNmxfcYShtclxlJOpCueX/gS5neXTdEG+lfTpkaE6fIJg4dk9TQo0EEsVEsg8za1/uc0Ev6gyhEH4mWYgMOkFM7LsucnDwr0Wg==
+Email Header: X-Message-Delivery | Vj0xLjE7dXM9MDtsPTA7YT0wO0Q9MTtHRD0yO1NDTD0z
+Email Header: X-Microsoft-Antispam-Message-Info |
+        =?utf-8?B?cGw0c2F1UU9sTDVpMVJwbU1jUlRiVTZSU011eG4rRjNjYVZVaTBnNmtIMzVj?=
+ =?utf-8?B?TmJ0alNYOE96YVBZbUZheWxTK1d1TFNvY1dTTFQ0ZUEyZUMrS2FuOWg2UTBh?=
+ =?utf-8?B?TFFwQjV1UXhhL2RGMmE2Vk1wZUVzVktDL0xnSGprYWg3K2I1UjNVOGNvbkxZ?=
+ =?utf-8?B?SUZYZXp6WlE3VXZ0QTFyaXAvVHorZkxBK2ljNkJiQU5IdkpHYnowZFFraXpE?=
+ =?utf-8?B?ekFqdzF3SFVTQTdjZ1N3NVJQK1FJSnplQ2lnRmJXakpEL1pqTlJTUVAzQzlI?=
+ =?utf-8?B?dVVwakpFblFjbWpIM3VaWEJFb3lReXdHS3hoeDNDSXBoT25OMEJMUEl6SWJs?=
+ =?utf-8?B?dk1DaU5tWlJTeFBaVFBYbmNzZmliMXk1dzJGK3RTc2hhblJ3WjFmUWNmblBL?=
+ =?utf-8?B?ejBoYkNocUJ6c2xRVXFLN3hYaUNGczNnckY1WWVHS0ZpZTJvNGZaUEs2dlFL?=
+ =?utf-8?B?MGVHRE5nOTJGK2tXMHl6Q2I1TVVTMS9sM01vSnRORTNKVWhQeDRxbjdmRXQy?=
+ =?utf-8?B?M2hMV085SkxNR0lDKzQwZGY3MzQrVGZxSGpPcVRkbnZ2RWlzaTV6dEh3L3dC?=
+ =?utf-8?B?VTNiZXppRWlWSkpFTG9SeVB6WnN1djczRjhtN3BhVnVmWGsxVmxad3Nub3dn?=
+ =?utf-8?B?OFRPYjZ4SGxUZG1uSFZSekdzWmVpOFhpdisvVjNyUDRlOVludGdWUjVUUFNk?=
+ =?utf-8?B?cS9WOG10cE85Z1pwanJENWF6NUJrSzlKVzhHQlByV1F0ZlRXNnoxdmpvU3Rv?=
+ =?utf-8?B?UjJ4MGFzcklWVHNvOFFGWDJ6RDl6eGZ4U0Fqc2RlUHdOZnFyRm1GdTAwaGRv?=
+ =?utf-8?B?ZUhGT0tHSDc3YVZpd09EVXJDTVVWTlhHTkRJRTVhT1V0a3poRzg3cjB5YkdM?=
+ =?utf-8?B?dUxsVDR1RHJqUVIzT0JhVm52UlB6bmZYYzdERFl5T3pnVGFnU3hMT0JGT1N6?=
+ =?utf-8?B?U2ZlRjVBd3VlbU16a0l0aDY5UzBJZGdHNjVBNXZJRCs4R1NWUm9NZ2xlVENr?=
+ =?utf-8?B?NEh1UDNOaGdqQmVpMzB4Y3NHeDdPOEdnV0oxc0FXaGgzaDhKaXdvQ2NOSk1i?=
+ =?utf-8?B?bEtCajViUDQveldYcXVUL0xabFNYUHFuYkorb3BKYzhTZHptQ3YvZFNqNDdR?=
+ =?utf-8?B?T0RsVitrOUswcEY5clNrcy9xVUhEU2xIczVyUERMam5jeUdBbWRvSnprYk54?=
+ =?utf-8?B?SHF0RjZQb1lXdWpRd0VoSmljL1VzdENuSXBzVWZ0Q0JobU8wSEFTbFllQ1VC?=
+ =?utf-8?B?UnVvaURLOG0vanN3OXNpUVhPZUpTWERQYWFkK0M4YStObGZlQThwdmdrdU5I?=
+ =?utf-8?B?Zzd5dEYzUUt2Uk1CeUFBRUttZWlMREJOaDBDM0F4bXNYTmZYNTNGeSs5Q3k4?=
+ =?utf-8?B?ZDQ5eUNsMXhER3lRRUM5VnJQb1l6LytwTk5taWRBWVRZVWIyZ2piL0JlaVo1?=
+ =?utf-8?B?dmFnVXB0K1Brd0tEWWNuaWp2OGdaVElGWE9rbDdNdlA0REttbHJhOUwwU1BO?=
+ =?utf-8?B?YkJ1b3JjNk91cDRGSXNvdTFTNFZWRVZDQm5VMTVKZmlHdE55WW5JZzZhWTd4?=
+ =?utf-8?B?K1JLTWhZUDVXaGFZSVJKQkordDhhREVMYXFZSkRQREJFTjYvbUZoMlpnbnpr?=
+ =?utf-8?B?Sk51K0FVODl2UVJld2RURE9NcHFjQzEyUG4xVkFEWllSVVpQVGt3WWovRkM4?=
+ =?utf-8?B?elQ3bVhTdHBlbXdpbE9CZnJNUGJLajlGQmVnbkhoK0tUcFVpeGVWanZBPT0=?=
+Email Header: MIME-Version | 1.0
+
+
+
+
+
+
+*********************************************
+
+Sender IP Address: 40.93.199.1
+Sender SID-PRA: STEVEN.AIELLO@AGOGE.IO
+Sender Authentication-Results: i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.93.199.1) smtp.rcpttodomain=outlook.com smtp.mailfrom=agoge.io;
+ dmarc=bestguesspass action=none header.from=agoge.io; dkim=pass (signature
+ was verified) header.d=agogeio487.onmicrosoft.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=agoge.io] dkim=[1,1,header.d=agoge.io]
+ dmarc=[1,1,header.from=agoge.io])
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: ARC-Seal | i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=iIJEYgFcsMEvrNqWmnaxfzjdgYxC9WdWrTUTkAtX6IZoXfXu02yhNR94B9Da9aLWKlAVZbl68gAcdPrstFZwTbRABP7Jljabfk5CChr3vRh10ClJFPmHKC5oG+iDw5VHIHDaEXWuvHZWC0mIZR9aIAvLEPl6pmYqEENbgkeRtQacBAyz8TtXwBNme0ZLIZXKliiRGKe+IBJtRYBH/S7DdGot/xYNoMjT6XmKUDEih2GVNdmIe7wSNRTuZznCYJhYRvISr2agTdFINJK0uLkCVdJ9hzKaPSTPsXbJKoS0Yr2aYBmMmOmm4B4vOrnU3f4iHDX+3m8+4HYAW5Q01rwPag==
+Email Header: ARC-Message-Signature | i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=yzW682HsMvvMqaS66zSzS6tMTL1cdf3RsTMgnjwmn+Y=;
+ b=gp19V75qVuWcYqihFFgJM++RNdDd7KvEUADIJqI3s4ga7IJbnw6bHzBmGuPXr4wSj98QkVL2SunzfEDrjnzGXWPGVrCfeq/2lJqW8IfRy+KvJWd5sCWQ5Nd97L7JDyQLi+6V8RgUZL33qXKI3Y76mYwxaRJGm7GwfYDu/QsgxkIMy7ogGCjlvQX4Elq9/PNDQwnYCaRMeoPUna3zKSzP3P4ZWF2O18bdPW3AfgZKRiTIPH0YHD1v3oo8F+I3EKkpsS2X5H2xx7GyzsKNsmJSisFz5PN8CSB1pbIf3yrHoLiDtTeknEtk/lE1TrxjTNWTnsz/ZMLLfAVTAt6Oh/gYFw==
+Email Header: ARC-Authentication-Results | i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.93.199.1) smtp.rcpttodomain=outlook.com smtp.mailfrom=agoge.io;
+ dmarc=bestguesspass action=none header.from=agoge.io; dkim=pass (signature
+ was verified) header.d=agogeio487.onmicrosoft.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=agoge.io] dkim=[1,1,header.d=agoge.io]
+ dmarc=[1,1,header.from=agoge.io])
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: Authentication-Results | spf=pass (sender IP is 40.93.199.1)
+ smtp.mailfrom=agoge.io; dkim=pass (signature was verified)
+ header.d=agogeio487.onmicrosoft.com;dmarc=bestguesspass action=none
+ header.from=agoge.io;compauth=pass reason=109
+Email Header: Received-SPF | Pass (protection.outlook.com: domain of agoge.io designates
+ 40.93.199.1 as permitted sender) receiver=protection.outlook.com;
+ client-ip=40.93.199.1; helo=CY4PR02CU007.outbound.protection.outlook.com;
+ pr=C
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: X-IncomingTopHeaderMarker |
+ OriginalChecksum:710044488162D0277792C6D1882BAAD19917F1C1D83930145DA8BD9C22BC63D0;UpperCasedChecksum:BF1CE71EE7E5DA957907AC83376FA4FCB4BD02D6B038AFDEE61C351CC2AED3F5;SizeAsReceived:7389;Count:40
+Email Header: ARC-Seal | i=2; a=rsa-sha256; s=arcselector9901; d=microsoft.com; cv=pass;
+ b=iIJEYgFcsMEvrNqWmnaxfzjdgYxC9WdWrTUTkAtX6IZoXfXu02yhNR94B9Da9aLWKlAVZbl68gAcdPrstFZwTbRABP7Jljabfk5CChr3vRh10ClJFPmHKC5oG+iDw5VHIHDaEXWuvHZWC0mIZR9aIAvLEPl6pmYqEENbgkeRtQacBAyz8TtXwBNme0ZLIZXKliiRGKe+IBJtRYBH/S7DdGot/xYNoMjT6XmKUDEih2GVNdmIe7wSNRTuZznCYJhYRvISr2agTdFINJK0uLkCVdJ9hzKaPSTPsXbJKoS0Yr2aYBmMmOmm4B4vOrnU3f4iHDX+3m8+4HYAW5Q01rwPag==
+Email Header: ARC-Message-Signature | i=2; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector9901;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=yzW682HsMvvMqaS66zSzS6tMTL1cdf3RsTMgnjwmn+Y=;
+ b=gp19V75qVuWcYqihFFgJM++RNdDd7KvEUADIJqI3s4ga7IJbnw6bHzBmGuPXr4wSj98QkVL2SunzfEDrjnzGXWPGVrCfeq/2lJqW8IfRy+KvJWd5sCWQ5Nd97L7JDyQLi+6V8RgUZL33qXKI3Y76mYwxaRJGm7GwfYDu/QsgxkIMy7ogGCjlvQX4Elq9/PNDQwnYCaRMeoPUna3zKSzP3P4ZWF2O18bdPW3AfgZKRiTIPH0YHD1v3oo8F+I3EKkpsS2X5H2xx7GyzsKNsmJSisFz5PN8CSB1pbIf3yrHoLiDtTeknEtk/lE1TrxjTNWTnsz/ZMLLfAVTAt6Oh/gYFw==
+Email Header: ARC-Authentication-Results | i=2; mx.microsoft.com 1; spf=pass (sender ip is
+ 40.93.199.1) smtp.rcpttodomain=outlook.com smtp.mailfrom=agoge.io;
+ dmarc=bestguesspass action=none header.from=agoge.io; dkim=pass (signature
+ was verified) header.d=agogeio487.onmicrosoft.com; arc=pass (0 oda=1 ltdi=1
+ spf=[1,1,smtp.mailfrom=agoge.io] dkim=[1,1,header.d=agoge.io]
+ dmarc=[1,1,header.from=agoge.io])
+Email Header: DKIM-Signature | v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=agogeio487.onmicrosoft.com; s=selector1-agogeio487-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=yzW682HsMvvMqaS66zSzS6tMTL1cdf3RsTMgnjwmn+Y=;
+ b=M2sl8oNIG4yUgGbHqP7i1K7mU9rIHPhUoXjof/YMvdm05qNkjL2tjkdOSizh3zbME/ryBU0Sixi4XrOl8r+7GNsKGVP0RAlyOvj8GP53nDl45HYtFeiWjsDh2Kn0NJzrpB9PbAH/JOpRinLGBZ6Z+HscpBi5IjpVvcD0tTMB588=
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: Received | from CH3PR20MB5698.namprd20.prod.outlook.com (2603:10b6:610:14a::19)
+ by SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Thu, 18 May 2023
+ 10:44:23 +0000
+Email Header: From | Steven Aiello <steven.aiello@agoge.io>
+Email Header: To | "agoge.io@outlook.com" <agoge.io@outlook.com>
+Email Header: Subject | Test from agoge.io domain
+Email Header: Thread-Topic | Test from agoge.io domain
+Email Header: Thread-Index | AQHZiXWfX0JHdLQGfkCCybmCZCVOPA==
+Email Header: Date | Thu, 18 May 2023 10:44:19 +0000
+Email Header: Message-ID |
+ <CH2PR05MB7110A6F7F03BFF117CB89C0F8A7F9@CH2PR05MB7110.namprd05.prod.outlook.com>
+Email Header: Accept-Language | en-US
+Email Header: Content-Language | en-US
+Email Header: X-MS-Has-Attach |
+Email Header: X-MS-TNEF-Correlator |
+Email Header: Authentication-Results-Original | dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=agoge.io;
+Email Header: x-ms-traffictypediagnostic |
+ CH2PR05MB7110:EE_|DM6PR05MB5193:EE_|DM6NAM11FT113:EE_|CH3PR20MB5698:EE_|SA1PR20MB6173:EE_
+Email Header: X-MS-Office365-Filtering-Correlation-Id | fbc38253-dd1d-4c75-5490-08db578cd729
+Email Header: x-ms-exchange-senderadcheck | 1
+Email Header: x-ms-exchange-antispam-relay | 0
+Email Header: X-Microsoft-Antispam-Untrusted | BCL:0;
+Email Header: X-Microsoft-Antispam-Message-Info-Original |
+ JcPWyinVm5qVsoYNNviMOxYFXfxQb8F9/WnDeERhuBbOQpzrAf4jkQCmWGBuT9AUfIDL3105ZKYbKlOy32Xl/m9XNNTTsJ8Xo4PVKhXKkqcGSLNk9oh7pmcdWlSG8S8MmlXxsemSPAIA2RJViU5n/4FdOfzoPHsiEbK6gK2AT/w1LUgGaOoWOZNLid4DDAiDewiHhSL0vijxdu/hgyiGrTWxqsrOuegm3lsziqfR3bFZ3mW7zI8ZRg5vahboceXdydQFVvhOPvR9KZMwt32gKf2iMv+ikCS6Qkx43Md1kQc2QgvNV8RiEI8WsPB+OQYkff+kHf/j1uDVCtHl8hAdtKsjvPmYBcbbqS9a530kVJhJrSA2gpyJ8H3bFJ9miG3txmUZGG69R/FXpDyCwcgcxOjqBk4C0EqQg1peTxUX6GUJeYImUHf9H6Lq+2uhX9+LIF/Iv7QKkUVCz/RTCvwJHB3iM52gkxlY8PD/aAXyUd+au9jVD610zNNf3QL/pvHzd54+gNn44VIP5iPWvqGhqdLZRRGnkqTHx5Cuw6BnJ8wbbXf+7JxuHflxNrRDyBPrTZSM6jANsDGBZNzCwLJ30Rn/xw8rLbhYiSnlq6kVetw=
+Email Header: X-Forefront-Antispam-Report-Untrusted |
+ CIP:255.255.255.255;CTRY:;LANG:en;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:CH2PR05MB7110.namprd05.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230028)(396003)(366004)(346002)(136003)(376002)(34036004)(39830400003)(451199021)(55016003)(86362001)(38100700002)(122000001)(38070700005)(166002)(33656002)(558084003)(41320700001)(8676002)(8936002)(9686003)(44832011)(5660300002)(508600001)(52536014)(7696005)(6506007)(4270600006)(26005)(4743002)(71200400001)(3480700007)(2906002)(64756008)(316002)(66556008)(66946007)(45080400002)(41300700001)(66446008)(76116006)(186003)(66476007)(6916009);DIR:OUT;SFP:1101;
+Email Header: X-MS-Exchange-AntiSpam-MessageData-Original-ChunkCount | 1
+Email Header: X-MS-Exchange-AntiSpam-MessageData-Original-0 |
+ =?us-ascii?Q?kBTlLLL0aXiqao4N7W0nLSXnj5vHZgdZ3FTEniCas6eVdCM1Zd0Dun/Ni9XC?=
+ =?us-ascii?Q?yFlAkc8gEHwh9gqCQbjbcTGmGd/GsENqYvEZK6NwqcXFWmNNax+R7079gxBF?=
+ =?us-ascii?Q?WW5asgHclj0bAXEgbq9p8S+Wjp8g5Fw4l9mJzrq/HOTJBnQMYm2GPcLXZAkn?=
+ =?us-ascii?Q?QiJrSkOzH0hUz+pu8eYuh7oj8SudbRrNAHyORPwOYdPpDuXHFkd2HJ5OhTh+?=
+ =?us-ascii?Q?SoJvj0XwK64N4Cx5yJPWGmXo6Mw7f1J/pXfCRx8cSmIdnY6R350L5+PDATNz?=
+ =?us-ascii?Q?bw5cn79XZimGz1r744vXE9k8ksSI8j/Mcl8ZWvdMr1Wp57NiifKReKiHgAOj?=
+ =?us-ascii?Q?77pJdUNc4IO1RzpS8BMu+eK1sNUYYfumvPexniWoRQAnFUiWz+sDPH5Dc72t?=
+ =?us-ascii?Q?qnHVnLcecFYRhiNuqzvMKaJO/gvmr7URIlBm7JPbBgTA0cehJCa0N+tIqoXM?=
+ =?us-ascii?Q?KkKNuS9u2W+dX4gy6asGkdSM91zYdMTY7fqTSa4UutARowKI78od6pZ0Bf3g?=
+ =?us-ascii?Q?Hq56EArkW7Epx2bKJKOFlsJ6intTorEL4XMV/rpRjbhZAfdiy/ezpZvLV2kT?=
+ =?us-ascii?Q?NO8Re9Mqg+Y/Hn8hTJ/RJ9K2fF87OV6GJ/1m0Bt8sbpywcqZhWNUz5wahTGf?=
+ =?us-ascii?Q?bi38dB3Nsh02hqxRKWVZWB62vhNFU4+rL/Wefv1qUcdQ6VlJSKlutc4iaj9U?=
+ =?us-ascii?Q?qoH/N8XFWDLtHqlObglcMiL4iCEpkvGLfDXLdGETaAg2oDTEUfY6wEeCERU4?=
+ =?us-ascii?Q?DFSL6/WUKqbL7ZhC7+9gRrH3M91QA3tulB+zJ5BbssWA1h283BhRwGvl7Mef?=
+ =?us-ascii?Q?jysIY4urM76NX5OyMRL/t0VC14dGrBYwqq+e7R0C4M5hwVYsB/UXeo+Magm/?=
+ =?us-ascii?Q?MhsY5yQ8Oi8S7Ythq7Hdx3kehi8v8HCijCIpqai0z+AEXOUPjpYp+KWpKXze?=
+ =?us-ascii?Q?OmX4jGDWFYObd/h1MEydj5ofq8Qh2WrfKJjt5CPOTOfMEeUkJBgL0EilsMjd?=
+ =?us-ascii?Q?LH0Xux1YNBbGTVToNwfA/mwoDYi6SzE2S/nG6isB3iNWiVxRmbeQLQwhBZ+2?=
+ =?us-ascii?Q?GxlMsvN2u5ZKAQo+demNzqR3djiuopQJ4k7nbcgH24X3IteFf6OI4mQNGBpY?=
+ =?us-ascii?Q?kk6R7WF6UgwyScjY7fmaCCCpSECcplzpB7+5ZCF5xzvoEKptSI2HLidCkgDP?=
+ =?us-ascii?Q?7gwpZW2htc8kGKv+AYle5M2+P0VK5did/Q7UM6/kHv7t1WpCtHgtBnfXGM7L?=
+ =?us-ascii?Q?TFEJV0kF9zew9Lt00bUqtQlJvyXWJ5dIXDnzgKilZ0NTNsY6JDiHm8liKcWF?=
+ =?us-ascii?Q?pCTPo6mG/gG3kodyMLYMrkgnmi09eCMLveo76C0AzqItV09HZY3YsoitsB0P?=
+ =?us-ascii?Q?NEnmnVaScAWK9TSJ50nQzVEHVMfyRvMTkiHWUB6L5lJe0VhPfLCV1a1awsBc?=
+ =?us-ascii?Q?ZlXrVcILb/XMOTSZk2pPz21XSMASgVQN4EsYFNtEkY5c8gvRxbtYBQMZ7C4Y?=
+ =?us-ascii?Q?y3NG9gQ0HGPra129zzXq7EZwrM2hl1gvqujZw7+MYMvCGKTZEpWOGJPbeSUG?=
+ =?us-ascii?Q?/URGiUvRFPlFTd6yaP8KWALKMMMjCd0DneY2V7aPFFaAYjyTfenJl8Rt+N4S?=
+ =?us-ascii?Q?UA=3D=3D?=
+Email Header: Content-Type | multipart/alternative;
+        boundary="_000_CH2PR05MB7110A6F7F03BFF117CB89C0F8A7F9CH2PR05MB7110namp_"
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersStamped | DM6PR05MB5193
+Email Header: X-IncomingHeaderCount | 40
+Email Header: Return-Path | steven.aiello@agoge.io
+Email Header: X-MS-Exchange-Organization-ExpirationStartTime | 18 May 2023 10:44:21.9905
+ (UTC)
+Email Header: X-MS-Exchange-Organization-ExpirationStartTimeReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-ExpirationInterval | 1:00:00:00.0000000
+Email Header: X-MS-Exchange-Organization-ExpirationIntervalReason | OriginalSubmit
+Email Header: X-MS-Exchange-Organization-Network-Message-Id |
+ fbc38253-dd1d-4c75-5490-08db578cd729
+Email Header: X-EOPAttributedMessage | 0
+Email Header: X-EOPTenantAttributedMessage | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa:0
+Email Header: X-MS-Exchange-Organization-MessageDirectionality | Incoming
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersStripped |
+ DM6NAM11FT113.eop-nam11.prod.protection.outlook.com
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersPromoted |
+ DM6NAM11FT113.eop-nam11.prod.protection.outlook.com
+Email Header: X-MS-PublicTrafficType | Email
+Email Header: X-MS-Exchange-Organization-AuthSource |
+ DM6NAM11FT113.eop-nam11.prod.protection.outlook.com
+Email Header: X-MS-Exchange-Organization-AuthAs | Anonymous
+Email Header: X-MS-UserLastLogonTime | 5/18/2023 10:20:10 AM
+Email Header: X-MS-Office365-Filtering-Correlation-Id-Prvs |
+ cbb0b4cc-296e-4bba-668c-08db578cd572
+Email Header: X-MS-Exchange-EOPDirect | true
+Email Header: X-Sender-IP | 40.93.199.1
+Email Header: X-SID-PRA | STEVEN.AIELLO@AGOGE.IO
+Email Header: X-SID-Result | PASS
+Email Header: X-MS-Exchange-Organization-PCL | 2
+Email Header: X-MS-Exchange-Organization-SCL | 1
+Email Header: X-Microsoft-Antispam | BCL:0;
+Email Header: X-MS-Exchange-CrossTenant-OriginalArrivalTime | 18 May 2023 10:44:21.9436
+ (UTC)
+Email Header: X-MS-Exchange-CrossTenant-Network-Message-Id | fbc38253-dd1d-4c75-5490-08db578cd729
+Email Header: X-MS-Exchange-CrossTenant-Id | 84df9e7f-e9f6-40af-b435-aaaaaaaaaaaa
+Email Header: X-MS-Exchange-CrossTenant-AuthSource |
+ DM6NAM11FT113.eop-nam11.prod.protection.outlook.com
+Email Header: X-MS-Exchange-CrossTenant-AuthAs | Anonymous
+Email Header: X-MS-Exchange-CrossTenant-FromEntityHeader | Internet
+Email Header: X-MS-Exchange-CrossTenant-RMS-PersistedConsumerOrg |
+ 00000000-0000-0000-0000-000000000000
+Email Header: X-MS-Exchange-Transport-CrossTenantHeadersStamped | DM6PR05MB5193
+Email Header: X-MS-Exchange-Transport-EndToEndLatency | 00:00:01.8340036
+Email Header: X-MS-Exchange-Processed-By-BccFoldering | 15.20.6387.033
+Email Header: X-Microsoft-Antispam-Mailbox-Delivery |
+        abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90005022)(91005020)(90014020)(91030020)(91040095)(9050020)(9100338)(2008001134)(4810010)(4910033)(8820095)(9575002)(10195002)(9320005);
+Email Header: X-Message-Info |
+        qZelhIiYnPkLX+jQ5qjmnR6Mo4b+25GQhrroj05u5r31oOv6qF3dfhvkiiOm5lNfanAyWTOejJx44xFItAb2C0ZwGyIY9D+OBfuwxv35Y4OuT0bDuiM97HtvtJDfldNsbbI/dGMJMTLkXViJ064WqgeJXEIIWN7RtnTiJw8t4pJxyWD2IkF5zkXfBS4yWkYNWzaz8MBEbrI=        
+Email Header: X-Message-Delivery | Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+Email Header: X-Microsoft-Antispam-Message-Info |
+        =?us-ascii?Q?8Le+NK+zPE4CvMNOrWs0TjScDJs8glo9RiqJ1Pcjv7ZTSU4xpHG5sc57ng99?=
+ =?us-ascii?Q?Olw1Zpx6XzEXRjcRVrGQfohhcndFapwxSFtBDawtT2cbMRTvH5+x/rAGGT3B?=
+ =?us-ascii?Q?eX/6Xc1Nv9aAOLj/5VkPszOYxsJzF8e55nLLSKyUm2xfi0axdCbAILF/9Iu7?=
+ =?us-ascii?Q?GpYZQTQ/oUbK7jwCE0DKqE/hAMCC0hmsmVyrCqiqczpPRhAoVt74LfcmAmhx?=
+ =?us-ascii?Q?9u2iWObyheTk4KT8h5L9JtyijBH2uCn7dnX7Q3rPxtPHJcysY8+l3qbZkRsk?=
+ =?us-ascii?Q?BkXw1p/P2iT3QvsVCkg6EBIMFa1JTrwPs1slyvq7GkDTw7NTW+B0Zika4DVh?=
+ =?us-ascii?Q?bvYUtpWU7RahYKtNtgVmdBMT/pFFlQUjpE9/lPS5mVL1+wUFuik3/tEp62Ft?=
+ =?us-ascii?Q?GMF+0yQ8q43tZOzr7UXEWSd4wtIHIAiJMLn1x++syKGz3C8oozvHujWstJ4k?=
+ =?us-ascii?Q?5C4Eb3Y9G0bEpLNvcOV38ebMimJEdNX/m4VRBNV/U4yn0ZLbQA82ojNpd9Pt?=
+ =?us-ascii?Q?8NQrKKAOpCzcbJeI8LkhbuvokamU4wfjXshK1MX6Am++WMphiEJyHBGsnv/W?=
+ =?us-ascii?Q?M71Giv3b26hdWc3zKXe88bVI1CFmQtAXs6BvoGVbsr2EIFyQQVJJWvgzT55H?=
+ =?us-ascii?Q?CkW6bnUaTBwzO24dRmO3BLezw6QQbvGmx0s8lIKkaRuo8DyJDvjbiiN/rNiu?=
+ =?us-ascii?Q?RJXqC/CsacYJhLDcw2acMiiS6Il1BjC7delUqB+COEzqJjgFb/XRbga5NZnh?=
+ =?us-ascii?Q?Ed0kOpafJV3Pi13gBK2nxFZECtcC0PNhLP/yzRcpe1ebjv8fIddpiBKbSpMp?=
+ =?us-ascii?Q?TTWy/2VMhovRsh6ehs5hRbnmnm0Yn5ONmKhEwU4ekRi7mWZOcHf1vslLklz+?=
+ =?us-ascii?Q?sWdw1Xb2Aiswi1bqhfUXZ0fKgSzv9Ez89O00OS8WvK6DQpavdSLb+07MzGM0?=
+ =?us-ascii?Q?ljlyxOPQFpR4mBFGCga+l0ps4xMpJuep9VpHid1XKrrbjnUYZ8FfB1NVEpnz?=
+ =?us-ascii?Q?OzuVr6wzBnXbFGaL/if4YrFb/BQ/+Isw9Q9nwDTyAEb3eX2D0ZGZ5YVhp0YI?=
+ =?us-ascii?Q?/9Qa+2xVWlZTM9UUmcq4I9sPajdGqvAQCbIcOGXidTYnoOp8UhGAb6lTVqjC?=
+ =?us-ascii?Q?pLaACV8RsiBIXzgIWEf0CeNjd4BTd9YmlJcXsy9pXyVr6E9Um472QalYTCZ6?=
+ =?us-ascii?Q?G2qBRqXOdqcYMbLIMEkz6cDwOBDigTa21kenOaLSemQtOoiorJsB4subXF4?=
+ =?us-ascii?Q?=3D?=
+Email Header: MIME-Version | 1.0
