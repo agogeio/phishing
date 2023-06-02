@@ -2,3 +2,4 @@ pyvenv.cfg
 .env
 Lib/
 Scripts/
+*.exe

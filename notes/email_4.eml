@@ -1,0 +1,77 @@
+Email Header: Received | from MW4PR20MB5323.namprd20.prod.outlook.com (::1) by
+ SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Mon, 22 May 2023 11:32:38
+ +0000
+Email Header: Received | from MW4PR20MB5323.namprd20.prod.outlook.com (::1) by
+ SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Mon, 22 May 2023 11:32:38
+ +0000
+Email Header: Received | from MW4PR20MB5323.namprd20.prod.outlook.com (::1) by
+ SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Mon, 22 May 2023 11:32:38
+ +0000
+Email Header: Received | from MW4PR20MB5323.namprd20.prod.outlook.com (::1) by
+ SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Mon, 22 May 2023 11:32:38
+ +0000
+Email Header: Received | from MW4PR20MB5323.namprd20.prod.outlook.com (::1) by
+ SA1PR20MB6173.namprd20.prod.outlook.com with HTTPS; Mon, 22 May 2023 11:32:38
+ +0000
+Email Header: From | Steve Aiello <sma92878@gmail.com>
+Email Header: To | "agoge.io@outlook.com" <agoge.io@outlook.com>
+Email Header: Subject | Test HTML Email
+Email Header: Thread-Topic | Test HTML Email
+Email Header: Thread-Index | AQHZjKEderC4bAZlG064kammSmaEFw==
+Email Header: Date | Mon, 22 May 2023 07:32:22 -0400
+Email Header: Message-ID |
+        <CA+Gfkp9YC7MB+yXw6cJmnPvLsx7kWpxBi34LoFVssmRWNLtMhg@mail.gmail.com>
+Email Header: Content-Language | en-US
+Email Header: X-MS-Exchange-Organization-AuthAs | Anonymous
+Email Header: X-MS-Exchange-Organization-AuthSource |
+        DM6NAM04FT011.eop-NAM04.prod.protection.outlook.com
+Email Header: X-MS-Has-Attach | yes
+Email Header: X-MS-Exchange-Organization-Network-Message-Id |
+        66a9726f-4e31-4fe0-963a-08db5ab83d77
+Email Header: X-MS-Exchange-Organization-SCL | 1
+Email Header: X-MS-Exchange-Organization-PCL | 2
+Email Header: X-MS-TNEF-Correlator |
+Email Header: X-MS-Exchange-Organization-RecordReviewCfmType | 0
+Email Header: received-spf | Pass (protection.outlook.com: domain of gmail.com designates
+ 209.85.222.180 as permitted sender) receiver=protection.outlook.com;
+ client-ip=209.85.222.180; helo=mail-qk1-f180.google.com; pr=C
+Email Header: x-ms-publictraffictype | Email
+Email Header: X-Microsoft-Antispam-Mailbox-Delivery |
+        abwl:0;wl:0;pcwl:0;kl:0;dwl:0;dkl:0;rwl:0;ucf:0;jmr:0;ex:0;auth:1;dest:I;ENG:(5062000305)(90000117)(90010023)(91010020)(91040095)(9050020)(9100338)(4810010)(4910033)(8820095)(9575002)(10195002)(9320005);
+Email Header: X-Message-Info |
+        qZelhIiYnPlQXn9apyuV6M9mwsyLk3EvJp544Ep3BuqDmPH9Nrf108LextA5W7i1MvFC+3NY2QHrOShn06ABMHqH2J5Vy6rdg8Pg3FK2TPsQYfONsIa0SmqxlstvzyI51MrjQezKXDYoePMaQnDsDjyLU9n0Q9Y65VrII5qWnLn9nQD5VH+vQOZsC0UnEALIznUERFi5OLhwNS/2cNoeUg==
+Email Header: X-Message-Delivery | Vj0xLjE7dXM9MDtsPTA7YT0xO0Q9MTtHRD0xO1NDTD0z
+Email Header: X-Microsoft-Antispam-Message-Info |
+        =?utf-8?B?ZytmbGFRNmthcjc5a3poNHJoTS9OSDFsT1hBTmFWT2VaY1cvaTlsTzk5dkNk?=
+ =?utf-8?B?VFNkV05LMWN2VEhyQnhFTFN6RklGWkZhZVVOc3Q0Nkt6TlB0dm42Nlp4WGMz?=
+ =?utf-8?B?S3pmVm50R0NRekQ0clRna3ppQko2RUFVcTUrSWhKdW1DcktEdTdTcGtOY1Zy?=
+ =?utf-8?B?M2QwS0Y5djRNbFJ6Um1TUmJ0bks2cDZaNXJUVUNwQk1UczNpSmtMbDdiOEdI?=
+ =?utf-8?B?SG8xcnh1YThuZE1HNlAvN0Z2ZVJMNFlrZm9DR0lZeFZwTG14d1dUcWc0WUts?=
+ =?utf-8?B?UTd4WEFsajBONlMvUDYxeVJJTHc3bytMRk1oU3RkQzZGL1h6MmorS2xlY1B1?=
+ =?utf-8?B?dk9nRENLdmp5ZGRVdUlsMjg2MTNaWVRmdWd2TjVSei9idk1wMHRTcEg3ZkRn?=
+ =?utf-8?B?V21qbnRyaEgyWERYYitMdkJNckpGcTkxY1dQMzhIQjZuNVBJb1hTVldITWFD?=
+ =?utf-8?B?VHU5RThEZTBRSW04c0FpcjBFUnZyeHU4cGF6KzVuNnlBSkU2bmRwenptK0FV?=
+ =?utf-8?B?b29jT2o0WFFTQ0loNU02QUxpbVJQZ1FCN3Z4dFRZTGcwSUp0LyswRHlBUWY3?=
+ =?utf-8?B?TTBVVlhhd3ZTMHhwbEZRbzg2UmoxUXhJcHVWeDhzVmVkNWNLQVYwdkp0SEJP?=
+ =?utf-8?B?RjhmMk1aNncvQ21DK1NTOTNEYnZHUE1SOXV5VUZqaTEyTnJMaFJ3dWxJQnp5?=
+ =?utf-8?B?c0REdWtlUm9kVHIxRnd5WHNuTzBIQ3lBZEFUUmV3bWVwMG1mdjdqWmxBeEQ1?=
+ =?utf-8?B?RFErVEV6YUVqM0ltd2t4ZDlaemV0VWhwNHNXNXZPdzM2dkVLV29zNHdqN2hX?=
+ =?utf-8?B?SHNCcDgvQVFURWFGK2dFd2g0ZlJ2WVBqRHE3OXRTQzlyK2lPNUtEZW5PV3ZT?=
+ =?utf-8?B?R0t0d2hnMHNPcUJiSFYxbHdIa3NNSUlyR2dRUUtRRzFLTXZtZnVpWXVTQTdJ?=
+ =?utf-8?B?MS8zb1pDcGZpR1duRTMyZHdjZkFjbWs5bjJZaHRXcmJpb044bjlKS3Evb0hI?=
+ =?utf-8?B?S2NIV3VwV0xlOEtGSzlMbFU1S1BvWTVNbGRjb0RNNlpVVkxGU0dsRTNiRC81?=
+ =?utf-8?B?NnFhR01wODRvcGdmcFlqYS9Pa0JYdmlqNmFGYWxvdVJGUWszMDhGZFFydjV1?=
+ =?utf-8?B?RkdjMXhxODVTT3ZHNzk5d1RET3VCcUpXL2pRMzNIU0lnUmtaRWl1RU1IZFNR?=
+ =?utf-8?B?eGoxNHVKYS9kazY1cldSazhmSjhoZE5Vd3lHSWd2VGQ2enNXSG03U0luV2JR?=
+ =?utf-8?B?YXM4alZXeklvNnJNNmZCcUNJdW50OXJsVWhZQnZBMmJuYk5rZlkyVUgyTmRG?=
+ =?utf-8?B?b2pmZHJtZ0hrTGNkZCt2d3huc0k3R0Zub2ZNYmdoY1U0WVF5bUh0ZXh6WXk0?=
+ =?utf-8?B?elBzNTl0VkFLeVZzVWZOaVRXYmp0WU5FQzVzd1dsR1V5bnU4QklTY1N0b2lj?=
+ =?utf-8?B?aEtiNFBUNzlsSG5BS28vSTZQbFFJaHcwcUpQZHoydEg2K2NPempPRjdFUUlD?=
+ =?utf-8?B?Q1YvdGZVazZzcy9MM2cyNEREelprVzNtZ28rYzBtZ1hMK0t5dTNmeXN6TkRT?=
+ =?utf-8?B?RmFycGtqYjBPUzB0ZW54ek9WN1NWOG92WDVnUzRSVmhndENPaGV4V2s2aUIz?=
+ =?utf-8?B?R1Y2dTl5K0g0cXpGYTVqTU9sR0ZVSVMyVlZrYmc5ZUU2b1hZRjc5TEZPQi9v?=
+ =?utf-8?B?WHFqWHhuMWFKL1RyOEJhb1BYRDIwQW42ZGY2OUEwQjJoclpiOWxxbkxKRzZj?=
+ =?utf-8?Q?Nn2rECD1vNDscTubCo=3D?=
+Email Header: Content-Type | multipart/mixed;
+        boundary="_004_CAGfkp9YC7MByXw6cJmnPvLsx7kWpxBi34LoFVssmRWNLtMhgmailgm_"
+Email Header: MIME-Version | 1.0
